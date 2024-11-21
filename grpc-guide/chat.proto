@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "grpc-guide/chat";
+package chat;
 
 message Message {
     string body = 1;
