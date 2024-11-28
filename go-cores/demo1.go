@@ -5,6 +5,10 @@ import (
 	"fmt"
 )
 
+/*
+程序实体的入口函数
+*/
+
 func main() {
 	var name string
 	flag.StringVar(&name, "name", "everyone", "The greeting object.")
