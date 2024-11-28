@@ -33,4 +33,10 @@ func main() {
 	newS5 := make([]int, len(s5))
 	copy(newS5, s5)
 	fmt.Printf("缩容后: len = %d, cap = %d, value = %v\n", len(newS5), cap(newS5), newS5) // 缩容后: len = 3, cap = 3, value = [1 2 3]
+
+	// 对旧切片的处理: 将其置为nil，自动内存管理进行垃圾回收
+	s6 := make([]int, 1000)
+	newS6 := make([]int, len(s6))
+	copy(newS6, s6)
+	s6 = nil // 释放旧切片的内存
 }
